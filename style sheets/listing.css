@@ -1,0 +1,513 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: rgb(245, 180, 199); */
+  background-color: rgb(248, 197, 212);
+}
+
+header {
+  width: 100%;
+  height: 10vh;    
+}
+
+#top {
+  width: 100%;
+  height: 100%;
+  background-color: #3b2632;
+  font-size: 2rem;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+}
+
+#top button {
+  font-size: 1.5rem;
+  /* height: 6vh; */
+  background-color: skyblue;
+  color: white;
+  margin: 2em auto;
+  border: 0.5em solid #3b2632;
+  border-radius: 0.7em;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#social {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.socialLogo {
+  height: 5vh;
+  /* height: 50px; */
+}
+
+#chooseDiv{
+    width: 85%;
+    margin-left: 7.5%;
+    margin-top: 3%;
+    padding-bottom: 1%;
+    font-size: 1.5rem;
+    background-color: #f393b080;    
+}
+
+.leftMargin{
+    margin-left: 1em;    
+}
+
+#favImg{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    animation: favLogoAnime1 2s ease-in-out 1;
+    
+}
+
+@keyframes favLogoAnime1{
+    
+    0%{
+        transform: translateX(-15rem);
+    }
+    50%{
+        transform: translateX(15rem);        
+    }
+    75%{
+        transform: translateX(-10rem);        
+    }
+    100%{
+        transform: translateX(0rem);
+    }
+    
+
+}
+
+@keyframes favLogoAnime2{
+    5%{
+        transform:rotate(-5deg)
+    }
+    10%{
+        transform: translateY(-1rem);
+        /* transform:rotate(0deg) */
+    }
+    20%{
+        transform: translateY(0rem);
+        /* transform:rotate(0deg) */
+    }
+    25%{
+        transform:rotate(-5deg)
+    }
+    35%{
+        transform: translateY(0rem);
+        /* transform:rotate(0deg) */
+    }
+    45%{
+        transform: translateY(-1rem);
+        /* transform:rotate(0deg) */
+    }
+    50%{
+        transform:scale(0.9)
+    }
+    60%{
+        transform:rotate(5deg)
+    }
+    65%{
+        transform: translateY(-1rem);
+        /* transform:rotate(0deg) */
+    }
+    70%{
+        transform: translateY(0rem);
+        /* transform:rotate(0deg) */
+    }
+    75%{
+        transform:rotate(5deg)
+    }
+    85%{
+        transform: translateY(0rem);
+        /* transform:rotate(0deg) */
+    }
+    95%{
+        transform: translateY(-1rem);
+        /* transform:rotate(0deg) */
+    }
+    100%{
+        transform:scale(0.9)
+    }
+    
+}
+
+.favLogo{
+    width: 200px;
+    margin: 1em;
+    clip-path: circle(50%);
+    animation: favLogoAnime2 10s ease infinite;
+    animation-delay: 2s;    
+}
+
+.favLogoTitle{
+    text-align: center;
+    margin: 0.1em;
+    height: 20px;
+    font: 1em sans-serif;
+}
+
+#mainDiv {
+  /* display:inline-block;
+    width: 100%;
+    background-color: skyblue;  */
+  width: 85%;
+  margin-left: 7.5%;
+  margin-top: 2em;
+  font-size: 1.5rem;
+  /* display: flex; */
+  display: inline-block;
+  background-color: #f8c5d480;
+}
+
+#filterSection {
+  float: left;
+  width: 30%;
+  background-color: #f8c5d480;
+}
+
+#filterDiv {
+  border: #b07496 solid 5px;
+  width: 70%;
+  min-height: 600px;
+  margin: 15%;
+  margin-top: 5%;
+  /* color: rgba(235, 94, 235, 0.75); */
+  color: rgba(86, 18, 58, 0.65);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 30px;
+  flex-grow: 1;
+}
+
+#filterDiv h2 {
+  padding: 2%;
+  text-align: center;
+  /* color: #9F1B5D; */
+  color: #291521;
+}
+
+input[type=radio]:hover{
+    cursor: pointer;
+}
+
+input[type=radio]:checked{
+    accent-color: #291521;
+}
+
+input[type=radio]:checked + label {    
+    color: #56123a;
+    font-style: italic;    
+ }
+
+#contentSection {
+  width: 70%;
+  float: left;
+}
+
+.rowBox {
+  min-width: 80%;
+  margin: 5%;
+  margin-top: 1%;
+  box-shadow: 0 2px 5px 0 #b0749680;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.imgDiv {
+  margin-left: 3%;
+  height: 400px;
+  width: 35%;
+}
+
+.imgDiv :hover{
+    transform: scale(1.1);
+    transform: rotate(-5deg);
+    cursor: pointer;
+}
+
+#contentSection img {
+  width: 100%;
+  height: 80%;
+  border-radius: 25px;
+}
+
+.addrDiv {
+  margin-left: 3%;
+  width: 65%;
+  /* color: hsla(234, 92%, 40%, 0.863); */
+  color:#040D5D;
+}
+
+#contentSection h2 {
+  color: #165baa;
+}
+
+.buttonsTable {
+  width: 100%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonsTable tr {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.buttonsTable td {
+  width: 50%;
+  justify-items: center;
+}
+
+.buttonsTable button {
+  width: 140px;
+  height: 30px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  border: 0px;
+  border-radius: 5px;
+  margin: 1em auto;
+}
+
+.b1 {
+  background-color: hwb(207 4% 24%);
+}
+
+.b2 {
+  background-color: rgb(233, 12, 12);
+}
+
+.b3 {
+  background-color: hsl(113, 91%, 32%);
+}
+
+.b4 {
+  background-color: goldenrod;
+}
+
+footer {
+  background-color: #3b2632;
+  text-align: center;
+  color: white;
+}
+
+.footText {
+  font-size: 20px;
+}
+
+.footDiv {
+  display: inline-block;
+  width: 32%;
+  border-right: 2px solid white;  
+}
+
+/* .column{
+  column-count: 3;
+  column-width: 100px;
+  column-rule: 3px solid white;
+  column-gap: 3rem;
+} */
+
+ul {
+  list-style-type: none;
+}
+
+.noborder {
+  border: none;
+}
+
+/* @media screen and (max-width:1600px){
+    body{
+        background-color: rgb(241, 168, 168);
+    }  
+  } */
+  
+  @media screen and (max-width:970px){
+    #mainDiv {
+        width: 100%;
+        margin: 0%;
+      }
+    .rowBox{
+      flex-wrap: wrap-reverse;
+      max-width:50%;
+    }
+    .imgDiv{
+      margin-top: 1em;
+      width: 90%;
+    }
+    .addrDiv{
+      width: 90%;
+    }
+    #top{
+      font-size: 1.2rem;
+    }
+    .buttonsTable button{
+      font-size: 15px;
+      width: 120px;
+    }
+    #social{
+      margin-left: 0;    
+    }
+  }
+
+@media screen and (max-width: 550px) {
+    .rowBox{
+        flex-wrap: wrap-reverse;
+        max-width:50%;
+      }
+      .imgDiv{
+        margin-top: 1em;
+        width: 90%;
+      }
+      .addrDiv{
+        width: 90%;
+      }
+      #mainDiv {
+        width: 100%;
+        margin: 0%;
+        margin-top: 2em;
+      }
+      #filterDiv{
+        width: 100%;
+        margin: 0%;
+      }
+      #chooseDiv{
+        width: 100%;
+        margin: 0%;
+      }
+      /* .buttonsTable button{
+        font-size: 15px;
+        width: 120px;
+      } */
+      #social{
+        margin-left: 0;    
+      }
+  #top {
+    font-size: 1.5em;
+  }
+  #top button {
+    font-size: 0.7em;
+    /* height: 5vh; */
+  }
+  .buttonsTable tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+    #mainDiv {
+        width: 100%;
+        margin: 0%;
+        margin-top: 2em;
+      }  
+      #filterDiv{
+        width: 100%;
+        margin: 0%;
+      } 
+      #chooseDiv{
+        width: 100%;
+        margin: 0%;
+      } 
+    .rowBox{
+        flex-wrap: wrap-reverse;
+        max-width:50%;
+      }
+      .imgDiv{
+        margin-top: 1em;
+        width: 90%;
+      }
+      .addrDiv{
+        width: 90%;
+      }      
+      /* .buttonsTable button{
+        font-size: 15px;
+        width: 120px;
+      } */
+      #social{
+        margin-left: 0;    
+      }
+  #top {
+    font-size: 1.2em;
+  }
+  #top button {
+    font-size: 0.7em;
+    /* height: 5vh; */
+  }
+  .buttonsTable tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  #mainDiv {
+      width: 100%;
+      margin: 0%;
+      margin-top: 2em;
+    }  
+    #filterDiv{
+      width: 100%;
+      margin: 0%;
+    } 
+    #chooseDiv{
+      width: 100%;
+      margin: 0%;
+    } 
+  .rowBox{
+      flex-wrap: wrap-reverse;
+      max-width:50%;
+    }
+    .imgDiv{
+      margin-top: 1em;
+      width: 90%;
+    }
+    .addrDiv{
+      width: 90%;
+    }      
+    /* .buttonsTable button{
+      font-size: 15px;
+      width: 120px;
+    } */
+    #social{
+      margin-left: 0;    
+    }
+#top {
+  font-size: 1.2em;
+}
+#top button {
+  font-size: 0.7em;
+  /* height: 5vh; */
+}
+
+.buttonsTable tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#filterSection{
+  margin: 0;
+  font-size: 1rem;
+}
+#contentSection{
+  float: right;
+  margin: 0;
+}
+.footText{
+  align-items: left;
+}
+.footDiv{
+  width: 30%;
+}
+
+}
+

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZomAppList</title>
+    <link href="../style sheets/listing.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="../images/food-wallpaper.png"/>
+</head>
+<body>
+    <header>
+        <div id="top">Developer Funnel&emsp;<span><button class="pointer" type="button" onclick="window.location='home.html'">Home</button></span>
+            <span id="social">
+                <a href="#"><img src="https://i.ibb.co/bsXv4bf/facebook.png" alt="fb" class="socialLogo"/></a>
+                <a href="#"><img src="https://i.ibb.co/8c9LJP1/insta.png" alt="insta" class="socialLogo"/></a>
+                <a href="#"><img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="yt" class="socialLogo"/></a>
+            </span>
+        </div>
+    </header>
+
+    <div id="chooseDiv">
+        <h2 class="leftMargin">Grab The Best Deal On Your Favorites Now</h2><br/>
+        <div id="favImg">
+            <div>
+                <a href="#"><img src="../images/pizza.png" alt="pizza" class="favLogo"/></a>
+                <h3 class="favLogoTitle">Pizza</h3>
+            </div>
+            <div>
+                <a href="#"><img src="../images/burger.png" alt="burger" class="favLogo"/></a>
+                <h3 class="favLogoTitle">Burger</h3>
+            </div>
+            <div>
+                <a href="#"><img src="../images/biryani.png" alt="biryani" class="favLogo"/></a>
+                <h3 class="favLogoTitle">Biryani</h3>
+            </div>
+            <div>
+                <a href="#"><img src="../images/chicken.png" alt="chicken" class="favLogo"/></a>
+                <h3 class="favLogoTitle">Chicken</h3>
+            </div>
+            <div>
+                <a href="#"><img src="../images/rolls.png" alt="rolls" class="favLogo"/></a>
+                <h3 class="favLogoTitle">Rolls</h3>
+            </div>
+            <div>
+                <a href="#"><img src="../images//cakes.png" alt="cakes" class="favLogo"/></a>
+                <h3 class="favLogoTitle">Cake</h3>
+            </div>
+        </div>
+    </div>
+
+    <div id="mainDiv">
+        <h2 class="leftMargin">Pick Your Taste</h2><br/>
+        <div id="filterSection">
+            <div id="filterDiv">
+                <h2>Cuisine Filter</h2>
+                <hr>
+                <input type="radio" id="all" name="cuisine_filter" value="all">
+                <label for="all" class="pointer">All</label><br>
+                <input type="radio" id="north_indian" name="cuisine_filter" value="north_indian">
+                <label for="north_indian" class="pointer">North Indian</label><br>
+                <input type="radio" id="south_indian" name="cuisine_filter" value="south_indian">
+                <label for="south_indian" class="pointer">South Indian</label><br>
+                <input type="radio" id="chinese" name="cuisine_filter" value="chinese">
+                <label for="chinese" class="pointer">Chinese</label><br>
+                <input type="radio" id="fast_food" name="cuisine_filter" value="fast_food">
+                <label for="fast_food" class="pointer">Fast Food</label><br>
+                <input type="radio" id="street_food" name="cuisine_filter" value="street_food">
+                <label for="street_food" class="pointer">Street Food</label><br>
+
+                <h2>Cost Filter</h2>
+                <hr>
+                <input type="radio" id="0_300" name="cost_filter" value="0_300">
+                <label for="0_300" class="pointer">0-300</label><br>
+                <input type="radio" id="301_600" name="cost_filter" value="301_600">
+                <label for="301_600" class="pointer">301-600</label><br>
+                <input type="radio" id="601_900" name="cost_filter" value="601_900">
+                <label for="601_900" class="pointer">601-900</label><br>
+                <input type="radio" id="901_5000" name="cost_filter" value="901_5000">
+                <label for="901_5000" class="pointer">901-5000</label><br>
+            </div>
+        </div>
+        <div id="contentSection">
+            <div class="rowBox">
+                <div class="imgDiv"><img src="../images/dinner.png" alt="Restaurant"></div>
+                <div class="addrDiv">
+                    <p>
+                        <h2>AMA Cafe</h2><br>House 6, New Colony, Majnu ka Tilla, New Delhi<br>
+                        Average<br>
+                        Rs.450
+                    </p>
+                    <table class="buttonsTable">
+                        <tr>
+                            <td><button class="b1 pointer" type="button">Lunch</button></td>
+                            <td><button class="b2 pointer" type="button">Night Life</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="b3 pointer" type="button">North Indian</button></td>
+                            <td><button class="b4 pointer" type="button">Chinese</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="rowBox">
+                <div class="imgDiv"><img src="../images/sacks.png" alt="Food"></div>
+                <div class="addrDiv">
+                    <p>
+                        <h2>Chandni Chowk 2 Bangalore</h2><br>Jeevan Bhima Nagar, Bangalore<br>
+                        Poor<br>
+                        Rs.370
+                    </p>
+                    <table class="buttonsTable">
+                        <tr>
+                            <td><button class="b1 pointer" type="button">Snacks</button></td>
+                            <td><button class="b2 pointer" type="button">Lunch</button></td>
+                        </tr>
+                        <tr>
+                            <td><button class="b3 pointer" type="button">North Indian</button></td>
+                            <td><button class="b4 pointer" type="button">South Indian</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr/>
+        <p class="footText">&copy;Developer Funnel2023</p>
+        <hr/>
+        <div class="footDiv">
+            <ul>
+                <li>About Us</li>
+                
+            </ul>
+        </div>
+        <div class="footDiv">
+            <ul>
+                
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="footDiv noborder">
+            <ul>
+                
+                <li>Visit Us</li>
+            </ul>
+        </div>
+        <hr/>
+        <div>
+            <a href="#"><img src="https://i.ibb.co/bsXv4bf/facebook.png" alt="fb" class="socialLogo"/></a>
+            <a href="#"><img src="https://i.ibb.co/8c9LJP1/insta.png" alt="insta" class="socialLogo"/></a>
+            <a href="#"><img src="https://i.ibb.co/w07K2Vn/youtube1.png" alt="yt" class="socialLogo"/></a>
+        </div>
+    </footer>
+
+</body>
+</html>

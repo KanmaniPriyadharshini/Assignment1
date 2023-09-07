@@ -1,0 +1,420 @@
+body{
+    margin:auto;
+    background:rgb(188, 188, 222)
+}
+
+a{
+    text-decoration:none
+}
+
+header{
+    height:60px;
+    /*border:5px solid hotpink;*/
+    background-color: #3b2632;
+}
+
+#brand{
+    float: left;
+    color:white;
+    font-size: 30px;
+    margin-top:1%;
+    margin-left:1%
+}
+
+#social{
+    float: right;
+}
+
+.socialLogo{
+    height:50px
+}
+
+#search{
+    height:450px;
+    /* border:10px groove green;
+     */
+    background-image: url('../images/food-wallpaper.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 450px;
+}
+
+.logo{
+    height:150px;
+    width: 150px;
+    background-color: white;
+    border-radius:50%;
+    margin-left: 46%;
+    margin-top: 2%;
+    position: absolute;
+    font-size:90px;
+    animation: revolve 10s infinite;
+}
+
+@keyframes revolve{
+    0%{
+        margin-left:2%;
+        transform: rotate(30deg);
+    }
+    25%{
+        margin-left:20%;
+        transform: rotate(90deg);
+    }
+    50%{
+        margin-left:40%;
+        transform: rotate(180deg);
+    }
+    75%{
+        margin-left:80%;
+        transform: rotate(270deg);
+    }
+    100%{
+        margin-left:40%;
+        transform: rotate(360deg);
+    }
+}
+
+.logo > span{
+    margin-left: 20%;
+    margin-top: 15%;
+    position: absolute;
+}
+
+#heading{
+    font-size:60px;
+    color:white;
+    margin-left: 33%;
+    margin-top: 15%;
+    position: absolute;
+}
+
+.dropdown{
+    height:60px;
+    width:50%;
+    /* border:2px solid white; */
+    margin-left: 30%;
+    margin-top: 20%;
+    position: absolute;
+}
+
+select{
+    height:60px;
+    width:40%;
+    font-size:20px;
+    text-align: center;
+}
+
+#restSelect{
+    width:59%;
+}
+
+#quickSearch{
+    /* height:600px; */
+    /* border:5px dotted blue; */
+    width:80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.quickHeading{
+    color:#3b2632;
+    font-size:30px;
+    font-weight:bold;
+    display: block;
+    margin-left: 2%;
+}
+
+.quickHeading:hover{
+    font-size:45px;
+    /* color:green */
+}
+
+.quickSubheading{
+    font-size:20px;
+    color:gray;
+    line-height: 2;
+    margin-left: 2%;
+}
+
+#tileBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tileContainer{
+    height:180px;
+    width:30%;
+    margin-left: 2%;
+    margin-top: 3%;
+    display: flex;
+    box-shadow: 10px 20px 10px #3b2632;
+    animation: dance 15s ease-in-out infinite;
+}
+
+@keyframes dance{
+    0%{
+        transform:rotate(-5deg)
+    }
+    25%{
+        transform:rotate(0deg)
+    }
+    40%{
+        transform:scale(1.1)
+    }
+    50%{
+        transform:rotate(5deg)
+    }
+    75%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(-5deg)
+    }
+    
+}
+
+.tileContainer:hover{
+    transform:scale(1.1)
+    /* transform:skewY(30deg);
+    transform:rotate(30deg) */
+    /* transform:translate(100px, 200px) */
+}
+
+.tileComponent1{
+    width:52%;
+}
+
+.tileComponent1 > img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.tileComponent2{
+    width:45%;
+    margin-left: 3%;
+    margin-top: 15%;
+}
+
+.compHeading{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.compHeading > a{
+    color:#3b2632 !important;
+}
+
+.compSubHeading{
+    font-size: 20px;
+    color:gray
+}
+
+footer{
+    /* height: 80px; */
+    /* border:10px double orange */
+    background-color: #3b2632;
+    text-align: center;
+    color: white
+}
+
+.footText{
+    font-size: 20px;
+}
+
+.footDiv{
+    display: inline-block;
+    width:32%;
+    border-right: 2px solid white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.noborder{
+    border:none
+}
+
+@media screen and (max-width:1600px){
+    body{
+        background-color: rgb(241, 168, 168);
+    }
+}
+
+@media screen and (max-width:1400px){
+    body{
+        background-color: rgb(241, 226, 168);
+    }
+    #heading{
+        margin-top: 16%;
+        margin-left: 28%;
+    }
+    .dropdown{
+        margin-top: 23%;
+        width: 60%;
+        margin-left: 22%;
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: rgb(207, 241, 168);
+    }
+    #heading{
+        margin-top: 17%;
+        margin-left: 23%;
+    }
+    .dropdown{
+        margin-top: 25%;
+        width: 65%;
+        margin-left: 18%;
+    }
+}
+
+@media screen and (max-width:1100px){
+    body{
+        background-color: rgb(168, 241, 209);
+    }
+    #heading{
+        margin-top: 19%;
+        margin-left: 21%;
+    }
+    .dropdown{
+        margin-top: 26%;
+        width: 70%;
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width:1021px){
+    body{
+        background-color: rgb(168, 208, 241);
+    }
+    .tileContainer{
+        width:45%;
+    }
+    #heading{
+        margin-top: 22%;
+        margin-left: 13%;
+    }
+    .dropdown{
+        margin-top: 31%;
+        width: 85%;
+        margin-left: 10%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #citySelect{
+        width: 56%;
+        margin-left: 14%;
+    }
+    #restSelect{
+        width: 56%;
+        margin-left: 14%;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color: rgb(195, 168, 241);
+    }
+    .tileContainer{
+        width:45%;
+    }
+    #search{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #heading{
+        margin-top: 25%;
+        margin-left: 12%;
+        font-size: 3rem;
+    }
+    .dropdown{
+        margin-top: 35%;
+        /* width: 92%; */
+        margin-left: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #citySelect{
+        width: 64%;
+        margin-left: 16%;
+    }
+    #restSelect{
+        width: 64%;
+        margin-left: 16%;
+    }
+}
+
+@media screen and (max-width:700px){
+    body{
+        background-color: rgb(241, 168, 234);
+    }
+
+    .tileContainer{
+        width:90%;
+    }
+    #heading{
+        margin-top: 34%;
+        margin-left: 12%;
+        font-size: 2rem;
+    }
+    .dropdown{
+        margin-top: 42%;
+        /* width: 92%; */
+        margin-left: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #citySelect{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #restSelect{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:700px){
+    body{
+        background-color: rgb(234, 128, 128);
+    }
+
+    .tileContainer{
+        width:90%;
+    }
+    #heading{
+        margin-top: 37%;
+        margin-left: 16%;
+        font-size: 2rem;
+    }
+    .dropdown{
+        margin-top: 48%;
+        /* width: 92%; */
+        margin-left: 4%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 90%;
+    }
+    #citySelect{
+        width: 95%;
+        margin-left: 5%;
+    }
+    #restSelect{
+        width: 95%;
+        margin-left: 5%;
+    }
+}
